@@ -65,19 +65,12 @@ public class PokemonAdapter extends RecyclerView.Adapter<PokemonAdapter.PokemonV
 
         void bind (Pokemon pokemon) {
             nameView.setText(pokemon.name);
-            String url = "https://img.pokemondb.net/artwork/archeops.jpg";
-//            String url = String.format("http://img.pokemondb.net/artwork/%s.jpg", pokemon.name.toLowerCase());
-//            String url = "http://img.pokemondb.net/artwork/" + pokemon.name.toLowerCase() + ".jpg";
-//            String url = String.format("http://img.pokemondb.net/artwork/%s.jpg", pokemon.name).toLowerCase();
-//            String url = String.format("http://img.pokemondb.net/artwork/%s.jpg", pokemon.name.toLowerCase());
-            //TODO: how the hell to format url
-
             //use Glide to set img
             RequestOptions myOptions = new RequestOptions()
                     .error(R.drawable.ic_error_black_24dp)
                     .override(100, 100);
             Glide.with(context)
-                    .load(url)
+                    .load(pokemon.urlString)
                     .apply(myOptions)
                     .into(imageView);
             }

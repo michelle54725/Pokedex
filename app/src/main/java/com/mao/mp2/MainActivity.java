@@ -28,6 +28,14 @@ public class MainActivity extends AppCompatActivity {
         pokemon.add(new Pokemon("Abra"));
         pokemon.add(new Pokemon("Absol"));
         pokemon.add(new Pokemon("thisshouldfail"));
+        pokemon.add(new Pokemon("Abomasnow"));
+        pokemon.add(new Pokemon("Abra"));
+        pokemon.add(new Pokemon("Absol"));
+        pokemon.add(new Pokemon("thisshouldfail"));
+        pokemon.add(new Pokemon("Abomasnow"));
+        pokemon.add(new Pokemon("Abra"));
+        pokemon.add(new Pokemon("Absol"));
+        pokemon.add(new Pokemon("thisshouldfail"));
 
         mRecyclerView = findViewById(R.id.recyclerView);
         mLinearLayoutManager = new LinearLayoutManager(this);
